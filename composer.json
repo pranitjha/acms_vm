@@ -17,9 +17,11 @@
     }
   ],
   "require": {
-    "php": "^7.3",
+    "php": "^7.4",
     "acquia/acquia_cms": "^1.0",
     "acquia/blt": "^13.1",
+    "acquia/blt-drupal-vm": "dev-master",
+    "acquia/blt-site-studio": "dev-develop",
     "acquia/drupal-environment-detector": "^1",
     "acquia/memcache-settings": "^1",
     "cweagans/composer-patches": "^1.6.0",
@@ -115,5 +117,8 @@
       "rm -rf docroot vendor composer.lock"
     ],
     "remove-git-submodules": "find . -mindepth 2 -type d -name .git | xargs rm -rf"
+  },
+  "require-dev": {
+    "geerlingguy/drupal-vm": "^6.0"
   }
 }
